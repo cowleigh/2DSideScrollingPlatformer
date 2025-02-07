@@ -56,6 +56,22 @@ if ((l7337ECDC_0 > 0))
 		/// @DnDArgument : "var" "move_y"
 		move_y = -jump_speed;
 	}
+
+	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 099933EC
+	/// @DnDParent : 7337ECDC
+	/// @DnDArgument : "var" "powerup"
+	/// @DnDArgument : "value" "1"
+	if(powerup == 1)
+	{
+		/// @DnDAction : YoYo Games.Movement.Set_Speed
+		/// @DnDVersion : 1
+		/// @DnDHash : 632E9934
+		/// @DnDParent : 099933EC
+		/// @DnDArgument : "speed" "6"
+		speed = 6;
+	}
 }
 
 /// @DnDAction : YoYo Games.Common.Else
