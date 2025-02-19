@@ -23,9 +23,9 @@ draw_set_valign(fa_middle);
 /// @DnDHash : 6F58A255
 /// @DnDArgument : "x_relative" "1"
 /// @DnDArgument : "y_relative" "1"
-/// @DnDArgument : "caption" "2D Side Scrolling Platformer"
+/// @DnDArgument : "caption" ""
 /// @DnDArgument : "var" "text_data"
-draw_text(x + 0, y + 0, string(2D Side Scrolling Platformer) + string(text_data));
+draw_text(x + 0, y + 0,  + string(text_data));
 
 /// @DnDAction : YoYo Games.Drawing.Set_Alignment
 /// @DnDVersion : 1.1
