@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_label_story_2",
+  "%Name":"obj_label_text1",
   "eventList":[],
   "managed":true,
-  "name":"obj_label_story_2",
+  "name":"obj_label_text1",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"This is my story2. \\n This is also my story",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Run Rabbit Run!",},
   ],
   "parent":{
     "name":"Objects",

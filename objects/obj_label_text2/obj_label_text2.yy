@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_label_story",
+  "%Name":"obj_label_text2",
   "eventList":[],
   "managed":true,
-  "name":"obj_label_story",
+  "name":"obj_label_text2",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"This is my story. \\n This is also my story",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},"propertyId":{"name":"text_data","path":"objects/obj_label_parent/obj_label_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"The player starts as a rabbit named Bunny. Bunny’s mission is to escape the evil jaws of Wolf and return to their home.\\n In order to get home, Bunny must travel through many regions such as the Carrot Kingdom, encountering different characters, as well different enemies all with motivation to return home.",},
   ],
   "parent":{
     "name":"Objects",
