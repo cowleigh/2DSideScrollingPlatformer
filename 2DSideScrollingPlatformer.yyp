@@ -43,6 +43,7 @@
     {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},},
     {"id":{"name":"obj_floor","path":"objects/obj_floor/obj_floor.yy",},},
     {"id":{"name":"obj_label_parent","path":"objects/obj_label_parent/obj_label_parent.yy",},},
+    {"id":{"name":"obj_label_start_text","path":"objects/obj_label_start_text/obj_label_start_text.yy",},},
     {"id":{"name":"obj_label_text1","path":"objects/obj_label_text1/obj_label_text1.yy",},},
     {"id":{"name":"obj_label_text2","path":"objects/obj_label_text2/obj_label_text2.yy",},},
     {"id":{"name":"obj_label_title","path":"objects/obj_label_title/obj_label_title.yy",},},
