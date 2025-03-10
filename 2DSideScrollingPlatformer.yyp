@@ -52,6 +52,7 @@
     {"id":{"name":"menu","path":"rooms/menu/menu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"story","path":"rooms/story/story.yy",},},
+    {"id":{"name":"coin_sound","path":"sounds/coin_sound/coin_sound.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_carrot","path":"sprites/spr_carrot/spr_carrot.yy",},},
     {"id":{"name":"spr_coin_hud","path":"sprites/spr_coin_hud/spr_coin_hud.yy",},},
