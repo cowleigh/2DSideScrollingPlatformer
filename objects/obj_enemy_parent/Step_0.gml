@@ -1,24 +1,11 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 3E719A86
-/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles")"
-/// @DnDArgument : "var" "collision_tilemap"
-collision_tilemap = layer_tilemap_get_id("Tiles");
-
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
 /// @DnDHash : 2EBE747E
 /// @DnDComment : 1 would be pressing right$(13_10)-1 would be pressing left$(13_10)0 would be no input
+/// @DnDDisabled : 1
 /// @DnDArgument : "expr" "keyboard_check(vk_right)  - keyboard_check(vk_left)"
 /// @DnDArgument : "var" "move_x"
-move_x = keyboard_check(vk_right)  - keyboard_check(vk_left);
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 56351818
-/// @DnDArgument : "expr" "move_x * walk_speed"
-/// @DnDArgument : "var" "move_x"
-move_x = move_x * walk_speed;
 
 /// @DnDAction : YoYo Games.Miscellaneous.Debug_Show_Message
 /// @DnDVersion : 1
@@ -65,7 +52,7 @@ if ((l7337ECDC_0 > 0))
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 77E6EA3C
-		/// @DnDComment : jump!
+		/// @DnDComment : jump over the wall
 		/// @DnDParent : 3F1459F2
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
@@ -79,13 +66,22 @@ if ((l7337ECDC_0 > 0))
 	/// @DnDArgument : "x" "x + (30 * sign(move_x))"
 	/// @DnDArgument : "y" "y + 50"
 	/// @DnDArgument : "object" "collision_tilemap"
+	/// @DnDArgument : "not" "1"
 	var l11834157_0 = instance_place(x + (30 * sign(move_x)), y + 50, [collision_tilemap]);
-	if ((l11834157_0 > 0))
+	if (!(l11834157_0 > 0))
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
+		/// @DnDHash : 381F796A
+		/// @DnDParent : 11834157
+		/// @DnDArgument : "expr" "move_x* -1"
+		/// @DnDArgument : "var" "move_x"
+		move_x = move_x* -1;
+	
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
 		/// @DnDHash : 37E0DFC6
-		/// @DnDComment : jump!
+		/// @DnDComment : jump
 		/// @DnDParent : 11834157
 		/// @DnDArgument : "expr" "-jump_speed"
 		/// @DnDArgument : "var" "move_y"
@@ -95,13 +91,9 @@ if ((l7337ECDC_0 > 0))
 	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
 	/// @DnDVersion : 1
 	/// @DnDHash : 356818B1
+	/// @DnDDisabled : 1
 	/// @DnDParent : 7337ECDC
-	var l356818B1_0;
-	l356818B1_0 = keyboard_check_pressed(vk_space);
-	if (l356818B1_0)
-	{
-	
-	}
+
 
 	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1

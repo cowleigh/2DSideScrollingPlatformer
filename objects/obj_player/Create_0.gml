@@ -1,5 +1,6 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
-/// @DnDHash : 3FC9A9B5
-/// @DnDArgument : "var" "powerup"
-powerup = 0;
+/// @DnDHash : 64D1737B
+/// @DnDArgument : "expr" "layer_tilemap_get_id("Tiles")"
+/// @DnDArgument : "var" "collision_tilemap"
+collision_tilemap = layer_tilemap_get_id("Tiles");
